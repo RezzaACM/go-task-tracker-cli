@@ -9,33 +9,27 @@ A command-line interface application for tracking tasks and managing productivit
 - Command-line based interface
 - Easy to use and lightweight
 
-## Installation
+## How to run
 
 ```bash
-go get github.com:RezzaACM/go-task-tracker-cli.git
+git clone git@github.com:RezzaACM/go-task-tracker-cli.git
+cd go-task-tracker-cli
 ```
 
 ## Usage
 
 ```bash
+# Build the application
+go build -o task-tracer-cli ./cmd/task-tracer-cli
+
 # Start the application
-task-tracker
+./task-tracer-cli
 
 # Common commands
-task-tracker -add "New task" -description "This is a new task"
-task-tracker -list todo
-task-tracker -update "Updated task" -descripiton "This is a updated task" [task-id]
-task-tracker -status completed [task-id]
-```
-
-## Development
-
-1. Clone the repository
-2. Install dependencies
-3. Build the project:
-
-```bash
-go build -o task-tracer-cli ./cmd/task-tracer-cli
+./task-tracer-cli -add "New task" -description "This is a new task"
+./task-tracer-cli -list todo
+./task-tracer-cli -update "Updated task" -descripiton "This is a updated task" [task-id]
+./task-tracer-cli -status completed [task-id]
 ```
 
 ## Contributing
