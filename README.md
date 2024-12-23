@@ -1,10 +1,6 @@
 # Task Tracker CLI
 
-A command-line interface application for tracking tasks and managing productivity built with Go.
-
-# Project URL
-
-https://roadmap.sh/projects/task-tracker
+A command-line interface application for tracking tasks and managing productivity built with Go. Sample solution for the [task-tracer](https://roadmap.sh/projects/task-tracker) challange from [roadmap.sh](https://roadmap.sh/projects/task-tracker)
 
 ## Features
 
@@ -37,6 +33,7 @@ task-tracker -status completed [task-id]
 1. Clone the repository
 2. Install dependencies
 3. Build the project:
+
 ```bash
 go build -o task-tracer-cli ./cmd/task-tracer-cli
 ```
