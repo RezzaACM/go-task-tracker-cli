@@ -11,6 +11,18 @@ import (
 
 var taskFile = "tasks.json"
 
+// Run the cli application.
+//
+// This function parses the flags and executes the appropriate method
+// on the TaskManager instance.
+//
+// The available flags are:
+//
+//	-add <task>    Add a new task
+//	-update <id>   Update a task by ID
+//	-delete <id>   Delete a task by ID
+//	-status <id>   Set task status (todo, in-progress, done)
+//	-list          List tasks by status (todo, in-progress, done)
 func Run() {
 	tm := &service.TaskManager{}
 	if err := tm.Load(taskFile); err != nil {

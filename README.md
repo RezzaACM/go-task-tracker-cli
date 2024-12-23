@@ -12,7 +12,7 @@ A command-line interface application for tracking tasks and managing productivit
 ## Installation
 
 ```bash
-go get github.com/funky.reza/task-tracker-cli
+go get github.com:RezzaACM/go-task-tracker-cli.git
 ```
 
 ## Usage
@@ -22,10 +22,10 @@ go get github.com/funky.reza/task-tracker-cli
 task-tracker
 
 # Common commands
-task-tracker add "New task"
-task-tracker list
-task-tracker complete [task-id]
-task-tracker delete [task-id]
+task-tracker -add "New task" -description "This is a new task"
+task-tracker -list todo
+task-tracker -update "Updated task" -descripiton "This is a updated task" [task-id]
+task-tracker -status completed [task-id]
 ```
 
 ## Development
@@ -34,7 +34,7 @@ task-tracker delete [task-id]
 2. Install dependencies
 3. Build the project:
 ```bash
-go build
+go build -o task-tracer-cli ./cmd/task-tracer-cli
 ```
 
 ## Contributing
